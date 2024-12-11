@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Контакты
+{% endblock %}
+
+{% block content %}
+<div class="contacts-container">
+    <h2 class="contacts-title">Свяжитесь с нами</h2>
+    <div class="contacts-content">
+        <!-- Контактная информация -->
+        <div class="contacts-info">
+            <h3>Контактная информация</h3>
+            <p><strong>Телефон:</strong> +1 (123) 456-7890</p>
+            <p><strong>Email:</strong> contact@alexnews.com</p>
+            <p><strong>Адрес:</strong> г. Ташкент, ул. Новостей, д. 1</p>
+        </div>
+
+        <!-- Контактная форма -->
+        <div class="contacts-form">
+            <h3>Оставить сообщение</h3>
+            <form method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+                </div>
+                <div class="form-group">
+                    <label for="email">Ваш Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Введите ваш email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Ваше сообщение</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Введите ваше сообщение"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

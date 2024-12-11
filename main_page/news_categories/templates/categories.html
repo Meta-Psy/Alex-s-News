@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+# Заголовок страницы
+{% block styles %}
+    Категории новостей
+{% endblock %}
+
+# Контент страницы
+{% block content %}
+<div class="categories-container">
+    <h2 class="categories-title">Категории новостей</h2>
+    <div class="categories-grid">
+        {% for category in categories %}
+        <div class="category-card">
+            <img src="{{ category.category_image.url }}" alt="{{ category.category_name }}" class="category-image">
+            <div class="category-info">
+                <h3 class="category-name">{{ category.category_name }}</h3>
+                <p class="category-description">{{ category.category_description|truncatewords:15 }}</p>
+                <a href="{% url 'category_news' category.id %}" class="category-link">Подробнее</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

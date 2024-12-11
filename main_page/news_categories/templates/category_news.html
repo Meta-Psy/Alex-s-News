@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+{{ category.category_name }}
+{% endblock %}
+
+{% block content %}
+<div class="category-detail-container">
+    <h2 class="category-detail-title">Категория: {{ category.category_name }}</h2>
+    <p class="category-detail-description">{{ category.category_description }}</p>
+    <div class="category-news-grid">
+        {% if news_list %}
+        {% for news in news_list %}
+        <div class="news-card">
+            <img src="{{ news.news_image.url }}" alt="{{ news.news_name }}" class="news-image">
+            <div class="news-info">
+                <h3 class="news-name">{{ news.news_name }}</h3>
+                <p class="news-description">{{ news.news_short_description|truncatewords:20 }}</p>
+                <a href="{% url 'news_detail' news.id %}" class="news-link">Читать далее</a>
+            </div>
+        </div>
+        {% endfor %}
+        {% else %}
+        <p>В данной категории пока нет новостей.</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

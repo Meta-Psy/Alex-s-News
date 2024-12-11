@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+О нас
+{% endblock %}
+
+{% block content %}
+<div class="about-container">
+    <h2 class="about-title">О нас</h2>
+    <div class="about-content">
+        {% if owners %}
+        <div class="owners-grid">
+            {% for owner in owners %}
+            <div class="owner-card">
+                <img src="{{ owner.about_image.url }}" alt="{{ owner.about_name }}" class="owner-image">
+                <div class="owner-details">
+                    <h3 class="owner-name">{{ owner.about_name }}</h3>
+                    <p class="owner-description">{{ owner.about_descr }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p>Информация о владельцах пока недоступна.</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

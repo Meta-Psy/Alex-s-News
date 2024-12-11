@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <!-- Шапка -->
+   <header class="header">
+    <div class="header-left">
+        <img src="{% static 'images/solar_system.jpg' %}" alt="Солнечная система" class="header-image">
+    </div>
+    <div class="header-center">
+        <h1>Alex's News</h1>
+        <p>Последние события, аналитика и многое другое</p>
+    </div>
+    <div class="header-right">
+        <img src="{% static 'images/galaxy.jpg' %}" alt="Галактика" class="header-image">
+    </div>
+</header>
+
+    <!-- Навигация и контент -->
+    <div style="display: flex; min-height: 90vh;">
+        <!-- Навигационная панель -->
+        <nav style="width: 200px; background-color: #f8f8f8; padding: 15px; border-right: 1px solid #ddd;">
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin: 10px 0;"><a href="/" style="text-decoration: none; color: #003366;">Главная</a></li>
+                <li style="margin: 10px 0;"><a href="/categories/" style="text-decoration: none; color: #003366;">Категории</a></li>
+                <li style="margin: 10px 0;"><a href="/about/" style="text-decoration: none; color: #003366;">О нас</a></li>
+                <li style="margin: 10px 0;"><a href="/contacts/" style="text-decoration: none; color: #003366;">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <!-- Основной контент -->
+        <main style="flex: 1; padding: 20px;">
+            {% block content %}
+            {% endblock %}
+        </main>
+    </div>
+
+    <!-- Подвал -->
+    <footer style="background-color: #003366; color: white; text-align: center; padding: 10px; margin-top: auto;">
+        <p style="margin: 0;">© 2024 Alex's News. Все права защищены.</p>
+    </footer>
+</body>
+</html>

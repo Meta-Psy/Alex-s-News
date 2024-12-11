@@ -1,0 +1,200 @@
+/* Убираем белые поля вокруг страницы */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif; /* Шрифт, популярный для новостей */
+    background-color: #f4f4f9; /* Светлый фон страницы */
+    color: #333; /* Основной цвет текста */
+    box-sizing: border-box;
+}
+
+/* Общий стиль для шапки */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-left,
+.header-right {
+    width: 15%; /* Задаёт размер для изображения */
+    text-align: center;
+}
+
+.header-center {
+    width: 70%; /* Основная область для заголовка */
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: Arial, sans-serif;
+}
+
+.header p {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+/* Изображения в шапке */
+.header-image {
+    max-width: 100%; /* Изображение не выходит за рамки */
+    height: auto;
+    object-fit: contain;
+}
+/* Стили для навигации */
+nav {
+    width: 200px;
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+    border-right: 1px solid #ddd;
+    position: fixed;
+    height: calc(100vh - 50px); /* Навигация не закрывает подвал */
+    top: 50px;
+    overflow-y: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 15px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem; /* Увеличиваем размер текста кнопок */
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #00509e; /* Цвет при наведении */
+    color: #d4d4d4; /* Блеклый текст при наведении */
+}
+
+/* Стили для основного контента */
+main {
+    margin-left: 220px; /* Оставляем место для навигации */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    min-height: 90vh; /* Минимальная высота страницы */
+}
+
+/* Подвал */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    clear: both;
+}
+
+/* Контейнер для категорий */
+.categories-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f9f9f9; /* Светлый фон контейнера */
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.categories-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #003366;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif; /* Классический шрифт для новостей */
+}
+
+/* Сетка категорий */
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr)); /* 2 карточки в строке */
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Карточка категории */
+.category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff; /* Белый фон карточки */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Изображение категории */
+.category-image {
+    width: 100%; /* Растягивает на всю ширину карточки */
+    height: 180px; /* Фиксированная высота для всех изображений */
+    object-fit: cover; /* Обеспечивает одинаковое отображение */
+}
+
+/* Информация о категории */
+.category-info {
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px; /* Фиксированная высота текста */
+}
+
+.category-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.category-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif; /* Читаемый шрифт для описания */
+}
+
+/* Ссылка "Подробнее" */
+.category-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.category-link:hover {
+    background-color: #00509e;
+    transform: scale(1.05); /* Лёгкое увеличение при наведении */
+}

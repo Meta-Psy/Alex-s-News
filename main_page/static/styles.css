@@ -1,0 +1,526 @@
+/* Убираем белые поля вокруг страницы */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif; /* Шрифт, популярный для новостей */
+    background-color: #f4f4f9; /* Светлый фон страницы */
+    color: #333; /* Основной цвет текста */
+    box-sizing: border-box;
+}
+
+/* Общий стиль для шапки */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative; /* Добавляем относительное позиционирование */
+    z-index: 2; /* Повышаем уровень слоя, чтобы заголовок оказался поверх */
+    height: 120px; /* Высота шапки */
+}
+
+/* Стили для центральной части */
+.header-center {
+    z-index: 2; /* Текст поверх изображений */
+    text-align: center;
+    flex-grow: 1;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: Arial, sans-serif;
+}
+
+.header p {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+/* Контейнеры для изображений */
+.header-left,
+.header-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 30%;
+    z-index: 1;
+    overflow: hidden; /* Убирает лишние части изображения */
+}
+
+.header-left {
+    left: 0;
+}
+
+.header-right {
+    right: 0;
+}
+
+/* Стили для изображений с градиентом */
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Пропорциональное заполнение */
+    position: relative;
+    mask-image: linear-gradient(to right, black, transparent); /* Градиент маски */
+    -webkit-mask-image: linear-gradient(to right, black, transparent); /* Для Webkit */
+}
+
+.header-right .header-image {
+    mask-image: linear-gradient(to left, black, transparent); /* Градиент для правого изображения */
+    -webkit-mask-image: linear-gradient(to left, black, transparent); /* Для Webkit */
+}
+/* Стили для навигации */
+nav {
+    width: 200px; /* Ширина панели */
+    background-color: #f8f8f8; /* Цвет фона панели */
+    color: #003366; /* Цвет текста */
+    padding: 0;
+    border-right: 1px solid #ddd; /* Разделяющая линия */
+    position: fixed; /* Панель остаётся на месте при прокрутке */
+    top: 0;
+    bottom: 0;
+    z-index: 1; /* Панель ниже заголовка */
+    overflow-y: auto; /* Прокрутка содержимого при необходимости */
+}
+
+/* Список кнопок */
+/* Список кнопок */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 140px; /* Увеличиваем отступ всей панели кнопок ниже */
+}
+
+/* Кнопки */
+nav ul li {
+    margin: 15px 0; /* Расстояние между кнопками */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #003366;
+    padding: 10px 15px; /* Внутренние отступы кнопок */
+    display: block;
+    border-radius: 5px; /* Скруглённые углы кнопок */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Эффект наведения */
+}
+
+nav ul li a:hover {
+    background-color: #00509e; /* Цвет фона при наведении */
+    color: #fff; /* Цвет текста при наведении */
+}
+
+/* Стили для основного контента */
+main {
+    margin-left: 220px; /* Оставляем место для навигации */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    min-height: 90vh; /* Минимальная высота страницы */
+}
+
+/* Подвал */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    position: relative; /* Устанавливаем относительное позиционирование */
+    z-index: 2; /* Повышаем уровень слоя подвала над навигационной панелью */
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2); /* Лёгкая тень для подвала */
+}
+
+/* Контейнер для категорий */
+.categories-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f9f9f9; /* Светлый фон контейнера */
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.categories-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #003366;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif; /* Классический шрифт для новостей */
+}
+
+/* Сетка категорий */
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr)); /* 2 карточки в строке */
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Карточка категории */
+.category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff; /* Белый фон карточки */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Изображение категории */
+.category-image {
+    width: 100%; /* Растягивает на всю ширину карточки */
+    height: 180px; /* Фиксированная высота для всех изображений */
+    object-fit: cover; /* Обеспечивает одинаковое отображение */
+}
+
+/* Информация о категории */
+.category-info {
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px; /* Фиксированная высота текста */
+}
+
+.category-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.category-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif; /* Читаемый шрифт для описания */
+}
+
+/* Ссылка "Подробнее" */
+.category-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.category-link:hover {
+    background-color: #00509e;
+    transform: scale(1.05); /* Лёгкое увеличение при наведении */
+}
+
+/* Контейнер для новостей */
+.news-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff; /* Белый фон */
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+}
+
+.news-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #003366;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif; /* Классический шрифт для заголовка */
+}
+
+/* Сетка новостей */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Карточка новости */
+.news-card {
+    background-color: #f8f8f8; /* Светлый фон карточки */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Подъём карточки при наведении */
+}
+
+/* Изображение новости */
+.news-image {
+    width: 100%; /* Заполняет всю ширину карточки */
+    height: 180px;
+    object-fit: cover; /* Пропорциональное масштабирование */
+    display: block;
+}
+
+/* Информация о новости */
+.news-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.news-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.news-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif; /* Читаемый шрифт для описания */
+}
+
+/* Ссылка "Читать далее" */
+.news-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.news-link:hover {
+    background-color: #00509e;
+    transform: scale(1.05); /* Лёгкое увеличение при наведении */
+}
+
+.about-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Заголовок страницы */
+.about-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+}
+
+/* Сетка владельцев */
+.owners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Гибкая сетка */
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Карточка владельца */
+.owner-card {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+/* Изображение владельца */
+.owner-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+/* Детали владельца */
+.owner-details {
+    text-align: center;
+}
+
+.owner-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.owner-description {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif;
+}
+
+.contacts-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Заголовок страницы */
+.contacts-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+}
+
+/* Основной контент */
+.contacts-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Контактная информация */
+.contacts-info h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.contacts-info p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+/* Контактная форма */
+.contacts-form h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #003366;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: none; /* Убираем возможность изменения размера поля */
+}
+
+.submit-btn {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #00509e;
+}
+
+.news-detail-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок новости */
+.news-detail-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Georgia', serif;
+}
+
+/* Дата публикации */
+.news-detail-date {
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Изображение новости */
+.news-detail-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Контент новости */
+.news-detail-content {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Категория новости */
+.news-category {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.news-category strong {
+    color: #003366;
+}

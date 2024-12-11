@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+# Заголовок страницы
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block content %}
+<div class="news-container">
+    <h2 class="news-title">Последние новости</h2>
+    <div class="news-grid">
+        {% for news in latest_news %}
+        <div class="news-card">
+            <img src="{{ news.news_image.url }}" alt="{{ news.news_name }}" class="news-image">
+            <div class="news-info">
+                <h3 class="news-name">{{ news.news_name }}</h3>
+                <p class="news-description">{{ news.news_short_description|truncatewords:20 }}</p>
+                <a href="{% url 'news_detail' news.id %}" class="news-link">Читать далее</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
