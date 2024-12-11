@@ -17,7 +17,7 @@
             <div class="category-info">
                 <h3 class="category-name">{{ category.category_name }}</h3>
                 <p class="category-description">{{ category.category_description|truncatewords:15 }}</p>
-                <a href="{% url 'category_news' category.id %}" class="category-link">Подробнее</a>
+                <a href="{% url 'category_newsgit' category.id %}" class="category-link">Подробнее</a>
             </div>
         </div>
         {% endfor %}
