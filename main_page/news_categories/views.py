@@ -1,12 +1,13 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import News, NewsCategory, About
-import datetime
 
 
 def index(request):
-    latest_news = News.objects.order_by('-created_at')[:10]
-    context = {'latest_news': latest_news}
-    return render(request, 'index.html', context)
+    if request.user.is_authenticated:
+        latest_news = News.objects.order_by('-created_at')[:10]
+        context = {'latest_news': latest_news}
+        return render(request, 'index.html', context)
+    return redirect('about')
 
 
 def categories(request):
@@ -22,9 +23,12 @@ def category_news(request, category_id):
 
 
 def about(request):
-    owners = About.objects.all()
-    context = {'owners': owners}
-    return render(request, 'about.html', context)
+    if request.user.is_authenticated:
+        owners = About.objects.all()
+        context = {'owners': owners}
+        return render(request, 'about.html', context)
+    else:
+        return redirect('login')
 
 
 def contacts(request):

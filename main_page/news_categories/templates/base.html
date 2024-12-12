@@ -22,6 +22,12 @@
     </div>
 </header>
 
+<div class="auth-buttons" style="text-align: right; margin: 10px 20px;">
+    <a href="{% url 'login' %}" class="btn login-btn" style="margin-right: 10px;">Войти</a>
+    <a href="{% url 'registration' %}" class="btn register-btn" style="margin-right: 10px;">Регистрация</a>
+    <a href="{% url 'logout' %}" class="btn logout-btn">Выйти</a>
+</div>
+
     <!-- Навигация и контент -->
     <div style="display: flex; min-height: 90vh;">
         <!-- Навигационная панель -->

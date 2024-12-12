@@ -1,30 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="bace5902-4e75-462a-9772-3c889c9fbc03" name="Changes" comment="" />
+    <list default="true" id="bace5902-4e75-462a-9772-3c889c9fbc03" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/main_page/news_categories/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main_page/news_categories/templates/registration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main_page/user/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main_page/user/templatetags/form_filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_page/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/main_page/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_page/main_page/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_page/main/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_page/main_page/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_page/main/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_page/main_page/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_page/main/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_page/main_page/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_page/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_page/main_page/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_page/main/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_page/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_page/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_page/news_categories/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_page/news_categories/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_page/news_categories/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_page/news_categories/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_page/news_categories/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_page/news_categories/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_page/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/main_page/static/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_page/staticfiles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/main_page/staticfiles/styles.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2pyzeGL0C9wopvQGK1MxB6RwFPV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

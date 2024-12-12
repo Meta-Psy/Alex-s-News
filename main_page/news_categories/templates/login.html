@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body class="login_body">
+    <div class="login-container">
+        <h1>Вход в аккаунт</h1>
+        <form method="post" class="login-form">
+            {% csrf_token %}
+
+            {% if form.non_field_errors %}
+                <div class="form-error">
+                    {{ form.non_field_errors }}
+                </div>
+            {% endif %}
+
+            <!-- Поле для имени пользователя -->
+            <div class="form-group">
+                <label for="id_username">Имя пользователя</label>
+                <input type="text" id="id_username" name="username" placeholder="Введите имя пользователя" required>
+                {% if form.username.errors %}
+                    <div class="field-error">
+                        {{ form.username.errors }}
+                    </div>
+                {% endif %}
+            </div>
+
+            <!-- Поле для пароля -->
+            <div class="form-group">
+                <label for="id_password">Пароль</label>
+                <input type="password" id="id_password" name="password" placeholder="Введите пароль" required>
+                {% if form.password.errors %}
+                    <div class="field-error">
+                        {{ form.password.errors }}
+                    </div>
+                {% endif %}
+            </div>
+
+            <button type="submit" class="submit-btn">Войти</button>
+        </form>
+
+        <p class="register-link">Нет аккаунта? <a href="{% url 'registration' %}">Зарегистрироваться</a></p>
+    </div>
+</body>
+</html>
