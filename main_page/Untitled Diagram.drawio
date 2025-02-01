@@ -1,13 +1,13 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="26.0.10">
   <diagram name="Page-1" id="pyUK-wu1zoBjb0XIBbU0">
-    <mxGraphModel dx="1000" dy="497" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1827" dy="1666" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="WwrMOiWACb1FL4NVmru--6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WwrMOiWACb1FL4NVmru--2" target="WwrMOiWACb1FL4NVmru--5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WwrMOiWACb1FL4NVmru--2" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Страница сайта&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WwrMOiWACb1FL4NVmru--2" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Страница сайта&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#D79B00;sketch=1;curveFitting=1;jiggle=2;shadow=1;glass=1;" vertex="1" parent="1">
           <mxGeometry y="120" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="WwrMOiWACb1FL4NVmru--8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WwrMOiWACb1FL4NVmru--5" target="WwrMOiWACb1FL4NVmru--7">
@@ -16,37 +16,37 @@
         <mxCell id="WwrMOiWACb1FL4NVmru--10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WwrMOiWACb1FL4NVmru--5" target="WwrMOiWACb1FL4NVmru--9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WwrMOiWACb1FL4NVmru--5" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Зарегистрирован?&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WwrMOiWACb1FL4NVmru--5" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Зарегистрирован?&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="120" y="120" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="WwrMOiWACb1FL4NVmru--12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WwrMOiWACb1FL4NVmru--7" target="WwrMOiWACb1FL4NVmru--11">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WwrMOiWACb1FL4NVmru--7" value="Да" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WwrMOiWACb1FL4NVmru--7" value="Да" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=0;" vertex="1" parent="1">
           <mxGeometry x="120" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="WwrMOiWACb1FL4NVmru--16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WwrMOiWACb1FL4NVmru--9" target="WwrMOiWACb1FL4NVmru--15">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WwrMOiWACb1FL4NVmru--9" value="Нет" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WwrMOiWACb1FL4NVmru--9" value="Нет" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=0;" vertex="1" parent="1">
           <mxGeometry x="120" y="240" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="WwrMOiWACb1FL4NVmru--18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WwrMOiWACb1FL4NVmru--11" target="WwrMOiWACb1FL4NVmru--17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WwrMOiWACb1FL4NVmru--11" value="Авторизация" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WwrMOiWACb1FL4NVmru--11" value="Авторизация" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#D79B00;sketch=1;curveFitting=1;jiggle=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="240" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="WwrMOiWACb1FL4NVmru--19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WwrMOiWACb1FL4NVmru--15" target="WwrMOiWACb1FL4NVmru--17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WwrMOiWACb1FL4NVmru--15" value="Регистрация" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WwrMOiWACb1FL4NVmru--15" value="Регистрация" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#D79B00;sketch=1;curveFitting=1;jiggle=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="240" y="240" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="WwrMOiWACb1FL4NVmru--21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WwrMOiWACb1FL4NVmru--17" target="WwrMOiWACb1FL4NVmru--20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WwrMOiWACb1FL4NVmru--17" value="Главная&amp;nbsp;&lt;div&gt;страница пользователя&lt;/div&gt;" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+        <mxCell id="WwrMOiWACb1FL4NVmru--17" value="Главная&amp;nbsp;&lt;div&gt;страница пользователя&lt;/div&gt;" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#e1d5e7;strokeColor=#9673a6;sketch=1;curveFitting=1;jiggle=2;shadow=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="220" y="120" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="WwrMOiWACb1FL4NVmru--23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WwrMOiWACb1FL4NVmru--20" target="WwrMOiWACb1FL4NVmru--22">
@@ -58,37 +58,37 @@
         <mxCell id="WwrMOiWACb1FL4NVmru--27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WwrMOiWACb1FL4NVmru--20" target="WwrMOiWACb1FL4NVmru--26">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WwrMOiWACb1FL4NVmru--20" value="Функционал" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WwrMOiWACb1FL4NVmru--20" value="Функционал" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="360" y="120" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="WwrMOiWACb1FL4NVmru--29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WwrMOiWACb1FL4NVmru--22" target="WwrMOiWACb1FL4NVmru--28">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WwrMOiWACb1FL4NVmru--22" value="Профиль" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WwrMOiWACb1FL4NVmru--22" value="Профиль" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=0;" vertex="1" parent="1">
           <mxGeometry x="360" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="WwrMOiWACb1FL4NVmru--31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WwrMOiWACb1FL4NVmru--24" target="WwrMOiWACb1FL4NVmru--30">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WwrMOiWACb1FL4NVmru--24" value="Таблица лидеров" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WwrMOiWACb1FL4NVmru--24" value="Таблица лидеров" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=0;" vertex="1" parent="1">
           <mxGeometry x="480" y="120" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="WwrMOiWACb1FL4NVmru--35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WwrMOiWACb1FL4NVmru--26" target="WwrMOiWACb1FL4NVmru--34">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WwrMOiWACb1FL4NVmru--26" value="Тестирование" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WwrMOiWACb1FL4NVmru--26" value="Тестирование" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=0;" vertex="1" parent="1">
           <mxGeometry x="360" y="240" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="WwrMOiWACb1FL4NVmru--28" value="Страница профиля пользователя" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WwrMOiWACb1FL4NVmru--28" value="Страница профиля пользователя" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#D79B00;sketch=1;curveFitting=1;jiggle=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="480" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="WwrMOiWACb1FL4NVmru--30" value="Страница таблицы лидеров" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WwrMOiWACb1FL4NVmru--30" value="Страница таблицы лидеров" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#D79B00;sketch=1;curveFitting=1;jiggle=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="600" y="120" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="WwrMOiWACb1FL4NVmru--37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WwrMOiWACb1FL4NVmru--34" target="WwrMOiWACb1FL4NVmru--36">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WwrMOiWACb1FL4NVmru--34" value="Страница тестирования" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WwrMOiWACb1FL4NVmru--34" value="Страница тестирования" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#D79B00;sketch=1;curveFitting=1;jiggle=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="480" y="240" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="WwrMOiWACb1FL4NVmru--39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WwrMOiWACb1FL4NVmru--36" target="WwrMOiWACb1FL4NVmru--38">
@@ -97,25 +97,25 @@
         <mxCell id="WwrMOiWACb1FL4NVmru--44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WwrMOiWACb1FL4NVmru--36" target="WwrMOiWACb1FL4NVmru--43">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WwrMOiWACb1FL4NVmru--36" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Тип тестов&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WwrMOiWACb1FL4NVmru--36" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Тип тестов&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;shadow=1;" vertex="1" parent="1">
           <mxGeometry x="600" y="240" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="WwrMOiWACb1FL4NVmru--41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WwrMOiWACb1FL4NVmru--38" target="WwrMOiWACb1FL4NVmru--40">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WwrMOiWACb1FL4NVmru--38" value="Тренировочные" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WwrMOiWACb1FL4NVmru--38" value="Тренировочные" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=0;" vertex="1" parent="1">
           <mxGeometry x="720" y="240" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="WwrMOiWACb1FL4NVmru--40" value="Страница выбора тренировочных тестов" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WwrMOiWACb1FL4NVmru--40" value="Страница выбора тренировочных тестов" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#D79B00;sketch=1;curveFitting=1;jiggle=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="720" y="120" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="WwrMOiWACb1FL4NVmru--46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WwrMOiWACb1FL4NVmru--43" target="WwrMOiWACb1FL4NVmru--45">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WwrMOiWACb1FL4NVmru--43" value="Экзамен" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WwrMOiWACb1FL4NVmru--43" value="Экзамен" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=0;" vertex="1" parent="1">
           <mxGeometry x="600" y="360" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="WwrMOiWACb1FL4NVmru--45" value="Страница экзаменов" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WwrMOiWACb1FL4NVmru--45" value="Страница экзаменов" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#D79B00;sketch=1;curveFitting=1;jiggle=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="720" y="360" width="80" height="80" as="geometry" />
         </mxCell>
       </root>
